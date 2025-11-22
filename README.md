@@ -1,80 +1,104 @@
-# RestaMix — Proyecto Web para Restaurante
+#RestaMix – Página Web de Restaurante
 
-RestaMix es un proyecto de demostración de un sitio web para un restaurante ficticio.
+Proyecto web desarrollado para la creación de un sitio de restaurante con múltiples páginas separadas y funcionalidades dinámicas, incluyendo navegación por menú, carrito básico y login de usuarios. El sitio está completamente desplegado y accesible para cualquier usuario.
 
-Características principales:
+#Descripción General
 
-- Páginas separadas: `index.html`, `menu.html`, `login.html`, `carrito.html`.
-- Componentes reutilizables: `components/navbar.html`, `components/footer.html`.
-- Arquitectura separada: CSS y JS externos por página en `/src`.
-- Funcionalidades dinámicas: registro/login, carrito con persistencia (localStorage), subida de imágenes (FileReader -> base64) y adición dinámica de productos.
-- Diseño responsivo usando Bootstrap 5 y Google Fonts.
+RestaMix es un sitio web de restaurante que simula una experiencia básica de navegación y selección de productos.
+El usuario puede:
 
-Estructura del proyecto
+Ver la landing page principal
 
-```
-/public
-   /images
+Navegar por el menú
 
-/src
-   /css
-      index.css
-      menu.css
-      login.css
-      carrito.css
+Acceder a un carrito funcional sencillo
 
-   /js
-      index.js
-      menu.js
-      login.js
-      carrito.js
+Iniciar sesión mediante un formulario básico
 
-/components
-   navbar.html
-   footer.html
+Interactuar con diferentes páginas creadas de forma modular
+
+El objetivo del proyecto es demostrar estructura web organizada, uso de JavaScript para funciones dinámicas y despliegue adecuado en Netlify.
+
+##Tecnologías Utilizadas
+
+HTML5
+
+CSS3
+
+JavaScript
+
+GitHub
+
+Netlify para despliegue
+
+ChatGPT como herramienta de apoyo durante el desarrollo
+
+#Funcionalidades Implementadas
+
+Este proyecto incluye funcionalidades dinámicas requeridas:
+
+Menú de Navegación
+
+Disponible en las principales páginas
+
+Permite moverse entre Landing, Menú, Carrito y Login
+
+Carrito Básico
+
+Agregar elementos de ejemplo
+
+Visualización de productos seleccionados
+
+Interactividad mediante JavaScript
+
+Login de Usuario
+
+Formulario simple de inicio de sesión
+
+Validación mínima desde JavaScript
+
+Redirección de usuario tras enviar el formulario
+
+#Instrucciones de Uso
+Acceso al Sitio Desplegado
+
+Puedes acceder al proyecto en línea a través de Netlify:
+https://69210dc37a98052f118f7be9--cute-squirrel-8d5a55.netlify.app/
+
+Cómo Ejecutar el Proyecto Localmente
+
+Clonar este repositorio
+
+git clone https://github.com/josuerocha/paginas
+
+Entrar a la carpeta
+
+cd paginas
+
+
+Abrir el archivo principal en el navegador
 
 index.html
-menu.html
-login.html
-carrito.html
-README.md
-```
 
-Tecnologías usadas
 
-- HTML5
-- CSS3 + Bootstrap 5 (CDN)
-- JavaScript (vanilla)
-- Google Fonts
+No se requiere instalación adicional.
 
-Cómo ejecutar localmente
+#Estructura del Proyecto
 
-1. Clona el repositorio o descarga los archivos.
-2. Para evitar problemas con fetch y rutas en `file://`, sirve el sitio con un servidor local. Ejemplos:
+index.html – Landing page principal
 
-   - Usando Python 3:
+menu.html – Página del menú
 
-     ```powershell
-     python -m http.server 5500
-     ```
+carrito.html – Carrito del restaurante
 
-   - O usando VSCode: Live Server extension.
+login.html – Página de inicio de sesión
 
-3. Abre en el navegador `http://localhost:5500` (o el puerto que definas).
+css/ – Hojas de estilo separadas
 
-Desplegar en Netlify
+js/ – Archivos JavaScript para cada función
 
-1. Crea un repo en GitHub con todo el contenido.
-2. Ve a Netlify y elige "New site from Git".
-3. Conecta el repo y despliega (no necesitas build command si solo son archivos estáticos).
+assets/ – Recursos utilizados (si aplica)
 
-Notas importantes
+#Autor
 
-- El sistema de login/registro y carrito usa `localStorage` para persistencia.
-- `carrito.html` está protegido: si no hay sesión activa, redirige a `login.html`.
-- Las imágenes cargadas por el formulario se guardan en `localStorage` en base64 y se muestran dinámicamente.
-
-Si quieres que suba este proyecto a un repositorio Git en tu máquina, dímelo y lo hago.
-
----
-RestaMix — listo para GitHub / Netlify
+Josue Rocha
