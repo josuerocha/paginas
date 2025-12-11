@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: 
+
+Sitemap: https://josuerocha.github.io/paginas/sitemap.xml

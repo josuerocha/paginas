@@ -1,0 +1,21 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Restaurant",
+  "name": "RestaMix",
+  "description": "Restaurante de comida boliviana que combina tradición y creatividad para servir platos inolvidables.",
+  "url": "https://josuerocha.github.io/paginas/",
+  "image": "https://josuerocha.github.io/paginas/public/images/hero.svg",
+  "priceRange": "$$",
+  "servesCuisine": "Bolivian",
+  "address": {
+    "@type": "PostalAddress",
+    "addressCountry": "BO"
+  },
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "contactType": "Customer Service"
+  },
+  "sameAs": [
+    "https://github.com/josuerocha"
+  ]
+}
